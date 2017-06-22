@@ -1,0 +1,48 @@
+consumes: [application/json]
+host: localhost:8080
+info: {title: Exercise Service, version: 0.0.1}
+paths:
+  /colectionexercises/survey/{uuid}:
+    get:
+      description: will return a list of known collection exercises for the survey
+        with an I
+      operationId: stub1
+      parameters:
+      - {description: the uuid of the survey you want, in: path, name: uuid, required: true,
+        type: string}
+      responses:
+        '200': {description: Success}
+        '204': {description: No Surveys Found}
+        default: {description: Error}
+      tags: [Exercise]
+      x-swagger-router-controller: controllers.exercises
+  /collectionexercises/{uuid}:
+    get:
+      description: will returns the details of the collection exercise with an ID
+      operationId: stub2
+      parameters:
+      - {description: the uuid of the exercise you want, in: path, name: uuid, required: true,
+        type: string}
+      responses:
+        '200': {description: Success}
+        '404': {description: Not Found}
+        default: {description: Error}
+      tags: [Exercise]
+      x-swagger-router-controller: controllers.exercises
+    put:
+      description: will execute the collection exercise with an ID of {uuid}
+      operationId: stub3
+      parameters:
+      - {description: the uuid of the exercise you want, in: path, name: uuid, required: true,
+        type: string}
+      responses:
+        '200': {description: Success}
+        '404': {description: Not Found}
+        default: {description: Error}
+      tags: [Exercise]
+      x-swagger-router-controller: controllers.exercises
+produces: [application/json]
+schemes: [http, https]
+swagger: '2.0'
+tags:
+- {description: Management of exervice information, name: Exercise}
