@@ -1,4 +1,4 @@
-consumes: [application/json]
+git clone consumes: [application/json]
 host: localhost:8080
 info: {title: Exercise Service, version: 0.0.1}
 paths:
