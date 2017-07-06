@@ -1,5 +1,5 @@
 consumes: [application/json]
-host: localhost:8080
+host: collectionexercisesvc.apps.mvp.onsclofo.uk:443
 info: {title: Exercise Service, version: 0.0.1}
 paths:
   /colectionexercises/survey/{uuid}:
