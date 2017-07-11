@@ -2,7 +2,7 @@ consumes: [application/json]
 host: localhost:8080
 info: {title: Exercise Service, version: 0.0.1}
 paths:
-  /colectionexercises/survey/{uuid}:
+  /collectionexercises/survey/{uuid}:
     get:
       description: will return a list of known collection exercises for the survey
         with an I
